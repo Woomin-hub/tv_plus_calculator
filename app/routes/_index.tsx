@@ -194,10 +194,10 @@ export default function App() {
           {isCalculated ? (
             <div className="mb-4">
               <div className="text-xl font-bold text-gray-800 mb-2">
-                 Room 당 요금: {(result.total / tvCount).toLocaleString()}원
+                 Room 당 요금: {Math.round(result.total / tvCount).toLocaleString()}원
               </div>
               <div className="text-xl font-bold text-gray-800 mb-2">
-                 Room 당 요금(vat 포함):  {(result.withTax / tvCount).toLocaleString()}원 
+                 Room 당 요금(vat 포함):  {Math.round(result.withTax / tvCount).toLocaleString()}원 
               </div>
               <div className="text-2xl font-bold text-gray-800 mb-2">
                  총 요금: {result.total.toLocaleString()}원
