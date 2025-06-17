@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import './app/tailwind.css';
-
 import { e } from 'vite-node/dist/index.d-DGmxD2U7.js';
 
 export default function App() {
